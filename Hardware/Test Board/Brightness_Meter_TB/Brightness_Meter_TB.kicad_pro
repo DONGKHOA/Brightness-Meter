@@ -23,14 +23,14 @@
         },
         "fab_line_width": 0.09999999999999999,
         "fab_text_italic": false,
-        "fab_text_size_h": 0.5,
-        "fab_text_size_v": 0.5,
+        "fab_text_size_h": 1.0,
+        "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
         "other_line_width": 0.15,
         "other_text_italic": false,
-        "other_text_size_h": 0.5,
-        "other_text_size_v": 0.5,
+        "other_text_size_h": 1.0,
+        "other_text_size_v": 1.0,
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
@@ -40,8 +40,8 @@
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
-        "silk_text_size_h": 0.5,
-        "silk_text_size_v": 0.5,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
@@ -111,7 +111,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.19999999999999998,
+        "min_clearance": 0.381,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.25,
@@ -173,8 +173,6 @@
       ],
       "track_widths": [
         0.0,
-        0.2032,
-        0.254,
         0.381,
         0.508,
         0.762,
@@ -193,6 +191,10 @@
         {
           "diameter": 0.8,
           "drill": 0.4
+        },
+        {
+          "diameter": 1.5,
+          "drill": 0.8
         }
       ],
       "zones_allow_external_fillets": false
@@ -405,7 +407,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -420,7 +422,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Brightness_Meter.kicad_pro",
+    "filename": "Brightness_Meter_TB.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -485,14 +487,6 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 0,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -505,36 +499,36 @@
   },
   "sheets": [
     [
-      "f7cc1c24-a210-4fa3-a52b-f1d84e501e31",
+      "e486bb10-2d63-468d-9bd4-f5a3f160d98c",
       ""
     ],
     [
-      "0dfa2039-b238-4efb-bfd4-eadfb986a7b5",
+      "7e918d34-9516-4c10-8389-3ffe73d0d494",
       "Power"
     ],
     [
-      "290a832f-b788-4d59-9a7b-fef286f8a5e3",
+      "a73198d7-67cd-4d8e-9baa-1db7315c268a",
       "MCU"
     ],
     [
-      "5a3a8fd1-e4fe-4d9a-9c54-1c080d472344",
-      "measure"
+      "53ce8ec6-de54-47fa-b698-08f3a6364712",
+      "Measure"
     ],
     [
-      "deff02a5-9749-4336-8250-65170600f763",
-      "adc"
+      "ec91ea22-535d-40c6-b553-7fb78c4b69be",
+      "ADC"
     ],
     [
-      "ab0de2ed-6637-4354-a1fc-796bfac97bc8",
-      "lcd"
+      "ae20f413-31c8-458f-b3c1-3b441a812626",
+      "LCD"
     ],
     [
-      "d2b066dd-80db-41f1-ba17-403893ab45ee",
-      "setting"
+      "ac8e142e-e306-4d12-8b23-f44bcf0c414c",
+      "SETTING"
     ],
     [
-      "6f8def10-c68a-4898-8083-f8c3c1f180a9",
-      "level shifting"
+      "22cf384a-ed77-4e69-b307-c5e8be40d89a",
+      "LEVEL SHIFTING"
     ]
   ],
   "text_variables": {}
